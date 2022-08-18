@@ -1,0 +1,66 @@
+<!doctype.html>
+<html>
+    <head>
+        <title>Vanila JS </title>
+        <style type="text/css">
+            body{background-color: lightcoral;}
+            div{ 
+                height: 400px;
+                width: 600px;
+                background-color: aqua;}
+        </style>
+        <script type="text/javascript">
+            function internalFun(){
+                alert("Hello Students!!");
+            }
+            function ConfirmFun(){
+                if(confirm("Are you sure??"))
+                {
+                    alert("Yesss");
+                }
+                else
+                {
+                    alert("Nooooo")
+                }
+            }
+
+            function promptFun(){
+                var FirstName=prompt("Enter First Name Here...");
+                var MiddleName=prompt("Enter Middle Name Here...");
+                var LastName=prompt("Enter Last Name Here...");
+                alert(FirstName +""+ MiddleName +""+ LastName);
+            }
+
+            function bodyBGChangeToYellow(){
+                document.body.style.backgroundColor="Yellow";
+            }
+
+            function bodyBGChangeToPrompt(){
+                document.body.style.backgroundColor=prompt("Enter Background Color Here...");
+            }
+
+            function colorPickerBodyBG(){
+                document.body.style.backgroundColor=document.getElementById("CP").value;
+            }
+
+            function yellowBGDiv(){
+                document.getElementsByTagName("Div")[0].style.backgroundColor="Yellow";
+            }
+
+            function
+        </script>
+    </head>
+    <body>
+        <div id="01" class="cld">
+            Silver Oak University    
+        </div> <hr/>
+
+        <input type="button" value="Alert Inline" onclick="alter('Hello Tarannum')">
+        <input type="button" value="Alert Internal" onclick="alterFun()"/>
+        <input type="button" value="Alert External" onclick="alterFunEx() "/> <hr/>
+
+        <input type="button" value="confirm Inline" onclick="confirm('Are You Sure..??') ">
+
+        
+    </body>
+</html>
